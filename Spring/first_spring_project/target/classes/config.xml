@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+<bean name="com" class="first_spring_project.Company" >
+<!--  autowire="byType" -->
+<property name="pinCode" value="560045"/>
+<property name="name" value="Google"/>
+
+<property name="devNames">
+<list>
+<value>james gosling </value>
+<value>huma</value>
+<value> martin</value>
+<value>chris</value>
+<value>hello</value>
+</list>
+</property>
+
+ <property name="deptAndDev">
+            <map>
+                <entry key="Development" value="20"/>
+                <entry key="Testing" value="8"/>
+                <entry key="Operation" value="5"/>
+                <entry key="Management" value="3"/>
+            </map>
+        </property>
+
+
+<!-- constructor injection-->
+<!-- 
+<constructor-arg name="pinCode" value="560045"/>
+<constructor-arg name="name" value="Google"/>
+<constructor-arg name="dev" ref="d"/>
+<constructor-arg name="lap" ref="l"/>
+<constructor-arg name="desk" ref="desk"/> 
+-->
+
+ <!--  setter injection -->
+ <!--  
+<property name="pinCode" value="560045"/>
+<property name="name" value="Google"/>
+
+
+<property name="dev" ref="d" />
+<property name="lap" ref="l"/>
+<property name="desk" ref="desk"/>
+-->
+
+</bean>
+
+<bean name="dev" class="first_spring_project.Developer" autowire="byName">
+<!-- <property name="com" ref="desk"/> -->
+</bean>
+
+<bean name="lap" class="first_spring_project.Laptop" primary="false">
+
+
+</bean>
+
+
+<bean name="desk" class="first_spring_project.Desktop" primary="true">
+</bean>
+
+</beans>
+
+       
+   
+
