@@ -1,0 +1,90 @@
+<!DOCTYPE web-app PUBLIC 
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+
+    <web-app>
+	<display-name>Archetype Created Web Application</display-name>
+
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>  <!-- first it was index.js default -->
+	</welcome-file-list>
+	
+<!-- for LoginServlet  -->
+   <servlet>
+		<servlet-class>servletdemo.LoginServlet</servlet-class>
+		<servlet-name>ls</servlet-name>
+	</servlet>
+
+
+	<servlet-mapping>
+		<url-pattern>/login</url-pattern>
+		<servlet-name>ls</servlet-name>
+	</servlet-mapping>
+
+<!-- for PrintServlet  -->
+	 <servlet>
+		<servlet-class>servletdemo.PrintServlet</servlet-class>
+		<servlet-name>ps</servlet-name>
+	</servlet>
+	
+
+
+	<servlet-mapping>
+		<url-pattern>/print</url-pattern>
+		<servlet-name>ps</servlet-name>
+	</servlet-mapping>
+	
+	
+<!-- for RegisterServlet  -->
+	
+	<servlet>
+		<servlet-class>servletdemo.RegisterServlet</servlet-class>
+		<servlet-name>rs</servlet-name>
+	</servlet>
+
+
+	<servlet-mapping>
+		<url-pattern>/register</url-pattern>
+		<servlet-name>rs</servlet-name>
+	</servlet-mapping> 
+	
+	
+<!--  for patientFormServlet -->
+    <servlet>
+		<servlet-class>servletdemo.PatientFormServlet</servlet-class>
+		<servlet-name>pfs</servlet-name>
+	</servlet>
+
+
+	<servlet-mapping>
+		<url-pattern>/patient</url-pattern>
+		<servlet-name>pfs</servlet-name>
+	</servlet-mapping> 
+	
+	<!--  for StudentServlet -->
+	<servlet>
+	<servlet-class>servletdemo.StudentServlet</servlet-class>
+	<servlet-name>ss</servlet-name>
+	</servlet>
+	
+	<servlet-mapping>
+	<url-pattern>/student</url-pattern>
+	<servlet-name>ss</servlet-name>
+	</servlet-mapping>
+	
+	<!--  for InfoServlet -->
+	<servlet>
+	<servlet-class>servletdemo.InfoServlet</servlet-class>
+	<servlet-name>is</servlet-name>
+	</servlet>
+	
+	<servlet-mapping>
+	<url-pattern>/info</url-pattern>
+	<servlet-name>is</servlet-name>
+	</servlet-mapping>
+    
+    </web-app>
+
+
+ 
