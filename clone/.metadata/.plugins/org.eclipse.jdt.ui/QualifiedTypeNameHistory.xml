@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
+    <fullyQualifiedTypeName name="com.microsoft.fusion.entity.Event"/>
+    <fullyQualifiedTypeName name="com.microsoft.fusion.controller.EventController"/>
+    <fullyQualifiedTypeName name="org.w3c.dom.events.Event"/>
+    <fullyQualifiedTypeName name="lombok.Getter"/>
+    <fullyQualifiedTypeName name="lombok.Setter"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.awt.Event"/>
+</qualifiedTypeNameHistroy>
